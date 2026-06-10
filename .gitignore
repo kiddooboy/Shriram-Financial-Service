@@ -3,5 +3,7 @@
 *.pem
 *.png
 !shriram-financial/public/advisory/*.png
+!shriram-financial/public/step-*.png
+!shriram-financial/public/how-soon-rocket.png
 *.zip
 screenshots/

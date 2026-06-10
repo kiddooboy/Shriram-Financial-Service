@@ -289,6 +289,87 @@ const faqs = [
     </div>
   </section>
 
+  <!-- ══ HOW SOON CAN I START? ══ -->
+  <section class="bg-[#fdfdfd]">
+    <div class="site-wrap py-36">
+
+      <!-- Top row: text left + rocket right -->
+      <div class="relative flex items-start justify-between gap-12">
+
+        <!-- Left: heading + subtitle + CTA -->
+        <div class="flex max-w-[600px] flex-col gap-12">
+          <div class="flex flex-col gap-4">
+            <h2 class="text-[40px] font-normal leading-[1.4] text-[var(--color-n900)]" style="font-family:var(--font-body)">
+              How Soon can I <span class="font-semibold text-[var(--color-brand)]">Start</span>?
+            </h2>
+            <p class="text-[18px] leading-relaxed tracking-[0.36px] text-[var(--color-n900)]" style="font-family:var(--font-body)">
+              Within <strong class="font-bold">minutes</strong>. You can create a Trading Account swiftly in a five-stage online process that can be completed on any of your devices.
+            </p>
+          </div>
+          <a href="/about/open-demat-account/"
+             class="flex h-[40px] w-[220px] items-center justify-center rounded-[4px] bg-[var(--color-brand)] text-[12px] font-medium text-white transition-colors hover:bg-[var(--color-brand-hover)]">
+            Open a Demat Account
+          </a>
+        </div>
+
+        <!-- Right: rocket illustration -->
+        <div class="hidden shrink-0 lg:block">
+          <img src="/how-soon-rocket.png" alt="" width="480" height="212"
+               class="w-[420px] object-contain" />
+        </div>
+      </div>
+
+      <!-- Steps row — 5 steps connected by a horizontal line -->
+      <div class="relative mt-32">
+        <!-- Connecting line at vertical centre of icons (icons are h-[64px], so 32px from top) -->
+        <div class="absolute left-[24px] right-[24px] top-[32px] border-t border-dashed border-[#e6e6e6]"></div>
+
+        <div class="relative grid grid-cols-2 gap-y-12 sm:grid-cols-5">
+          {[
+            {
+              img: '/step-1.png',
+              title: 'Basic Information',
+              desc: 'Name, mobile number, PAN — takes under two minutes.',
+            },
+            {
+              img: '/step-2.png',
+              title: 'Complete eKYC via Aadhaar',
+              desc: 'OTP-based verification — no physical forms or branch visits.',
+            },
+            {
+              img: '/step-3.png',
+              title: 'Upload Documents',
+              desc: "Bank proof and a live photograph from your phone's camera.",
+            },
+            {
+              img: '/step-4.png',
+              title: 'Digital eSign',
+              desc: 'Aadhaar-based e-sign replaces physical signature on all forms.',
+            },
+            {
+              img: '/step-5.png',
+              title: 'Account Activation',
+              desc: 'Credentials delivered to your registered email. Start investing.',
+            },
+          ].map((step) => (
+            <div class="flex flex-col items-center gap-6 px-4 text-center">
+              <!-- Icon box -->
+              <div class="relative z-10 flex h-[64px] w-[48px] shrink-0 items-center justify-center rounded-[8px] border border-[#e6e6e6] bg-white">
+                <img src={step.img} alt="" class="h-full w-full object-contain" />
+              </div>
+              <!-- Text -->
+              <div class="flex flex-col gap-3">
+                <p class="text-[18px] font-medium leading-snug text-[#121212]">{step.title}</p>
+                <p class="text-[14px] leading-relaxed text-[#121212] opacity-70">{step.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ══ HOW ARE WE DIFFERENT? ══ -->
   <section class="bg-[var(--color-dark-800)] relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0 opacity-[0.04]"
