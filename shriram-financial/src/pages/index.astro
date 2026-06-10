@@ -193,7 +193,7 @@ const faqs = [
 <BaseLayout title="" description="Shriram Financial Services — Advisory-Led Wealth Curation. Invest across equity, mutual funds, bonds and more with India's most trusted platform.">
 
   <!-- ══ HERO ══ -->
-  <section class="relative xl:min-h-[calc(100vh-88px)] overflow-hidden">
+  <section class="relative xl:min-h-[calc(100vh-80px)] overflow-hidden">
     <div class="hero-wave" aria-hidden="true"></div>
     <video id="hero-video"
       class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-1000"
@@ -203,7 +203,7 @@ const faqs = [
     <div class="absolute inset-0 bg-gradient-to-r from-white/82 via-white/48 to-white/0" aria-hidden="true"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-black/8 via-transparent to-black/12" aria-hidden="true"></div>
 
-    <div class="site-wrap relative z-10 flex items-start gap-8 py-14 sm:py-20 lg:py-24 xl:min-h-[calc(100vh-88px)] xl:items-center xl:gap-12 xl:py-0">
+    <div class="site-wrap relative z-10 flex items-start gap-8 py-14 sm:py-20 lg:py-24 xl:min-h-[calc(100vh-80px)] xl:items-center xl:gap-12 xl:py-0">
 
       <!-- Left text -->
       <div class="w-full xl:max-w-[560px] xl:shrink-0 reveal reveal-1">
@@ -212,7 +212,7 @@ const faqs = [
           <span class="font-bold text-[var(--color-brand)]">Advisory-Led</span> Wealth Curation
         </h1>
         <p class="mt-5 text-[15px] leading-relaxed text-[var(--color-n800)] lg:text-[17px]">
-          Don't just trade; grow your wealth with India's most trusted advisors.
+          Don't just trade; grow your wealth with India's most trusted advisory.
         </p>
 
         <!-- Trust badges -->
@@ -220,27 +220,27 @@ const faqs = [
           {['Trusted By 10L+ Investors', 'In-House Analyst Team', 'Pan-India Presence'].map((t, i) => (
             <div class="flex items-center gap-3">
               {i > 0 && <span class="trust-dot"></span>}
-              <span class="text-[13px] font-medium text-[var(--color-n800)]">{t}</span>
+              <span class="text-[14px] font-medium text-[var(--color-n900)]">{t}</span>
             </div>
           ))}
         </div>
 
         <div class="mt-8">
-          <a href="/about/antara-web-login/" class="btn-primary">Explore Antara</a>
+          <a href="/about/antara-web-login/" class="btn-primary" style="width:220px">Explore Antara</a>
         </div>
       </div>
 
       <!-- Right: glassmorphism Open Demat card -->
       <div class="reveal reveal-2 hidden flex-1 justify-end xl:flex">
-        <div class="glass-form w-full max-w-[480px] rounded-xl p-10">
-          <h2 class="text-[28px] font-semibold text-[var(--color-n900)]" style="font-family:var(--font-display)">
+        <div class="glass-form w-full max-w-[520px] rounded-[4px] p-[72px]">
+          <h2 class="text-[32px] font-medium text-[var(--color-n900)]">
             Open a Demat Account
           </h2>
           <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1.5">
             {['100% Paperless', 'Open Within Minutes', 'SEBI Regulated'].map((t, i) => (
               <div class="flex items-center gap-3">
                 {i > 0 && <span class="trust-dot" style="background:#aaa"></span>}
-                <span class="text-[12px] text-[var(--color-n700)]">{t}</span>
+                <span class="text-[12px] font-medium text-[var(--color-n800)]">{t}</span>
               </div>
             ))}
           </div>
@@ -266,9 +266,9 @@ const faqs = [
             <a href="/about/open-demat-account/" class="btn-primary w-full justify-center text-[15px]">
               Get Started
             </a>
-            <p class="text-center text-[13px] text-[var(--color-n700)]">
+            <p class="text-[12px] text-[var(--color-n900)]">
               Already a part of us?{' '}
-              <a href="/about/antara-web-login/" class="font-medium text-[var(--color-link)] hover:underline">Login Here.</a>
+              <a href="/about/antara-web-login/" class="font-bold text-[var(--color-link)] hover:underline">Login Here.</a>
             </p>
           </div>
         </div>
