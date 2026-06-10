@@ -50,28 +50,28 @@ const differItems = [
 
 const advisoryCards = [
   {
-    icon: `<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24l6-6 5 5 7-9 6-4"/><path d="M28 4v6h-6"/></svg>`,
+    img: '/advisory/research-calls.png',
     title: 'Expert Research Calls',
     body: 'Daily SEBI-registered market research and insights.',
     cta: 'Start Learning',
     href: '/research/',
   },
   {
-    icon: `<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,20 12,12 18,18 28,6"/><polyline points="22,6 28,6 28,12"/></svg>`,
+    img: '/advisory/trade-equities.png',
     title: 'Trade Indian Equities',
     body: 'Access & execute seamless trades across the NSE and BSE.',
     cta: 'Explore Market',
     href: '/products/equity/',
   },
   {
-    icon: `<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="12" r="5"/><path d="M8 28c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M24 8l4-4M28 12l-4-4"/></svg>`,
+    img: '/advisory/trading-ideas.png',
     title: "Today's Trading Ideas",
     body: 'Learn proven techniques from seasoned traders.',
     cta: 'Discover Trading Ideas',
     href: '/research/technical/',
   },
   {
-    icon: `<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="10" r="6"/><path d="M4 28c0-6.627 5.373-12 12-12s12 5.373 12 12"/></svg>`,
+    img: '/advisory/expert-advice.png',
     title: 'Get Expert Advice',
     body: 'Stay aware and informed with real-time market analysis.',
     cta: 'Connect With An Advisor',
@@ -340,7 +340,7 @@ const faqs = [
       <div class="advisory-grid mt-10 grid gap-0 sm:grid-cols-2 lg:grid-cols-4 border border-[var(--color-n400)] rounded-[4px] overflow-hidden">
         {advisoryCards.map((c, i) => (
           <div class={`advisory-card group relative flex min-h-[322px] flex-col overflow-hidden bg-white px-6 py-10 ${i < 3 ? 'lg:border-r border-[var(--color-n400)]' : ''} ${i < 2 ? 'sm:border-b lg:border-b-0 border-[var(--color-n400)]' : ''}`}>
-            <span set:html={c.icon} class="h-[52px] w-[52px] shrink-0 block text-[var(--color-brand)]"/>
+            <img src={c.img} alt="" class="h-[80px] w-[100px] shrink-0 object-contain object-left" />
             <div class="mt-8 flex flex-col gap-4">
               <h3 class="text-[16px] font-bold uppercase tracking-[1.2px] text-[var(--color-n900)]">{c.title}</h3>
               <p class="text-[14px] leading-[1.5] text-[var(--color-n800)]">{c.body}</p>
@@ -355,21 +355,23 @@ const faqs = [
       </div>
 
       <!-- Nudge CTA -->
-      <div class="mt-6 flex flex-col items-start justify-between gap-5 overflow-hidden rounded-[4px] border border-[var(--color-n400)] bg-[var(--color-n100)] px-8 py-6 sm:flex-row sm:items-center">
-        <div class="flex items-start gap-5">
-          <div class="hidden h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--color-brand-pale)] sm:flex">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="h-8 w-8 text-[var(--color-brand)]"><circle cx="16" cy="10" r="6"/><path d="M4 28c0-6.627 5.373-12 12-12s12 5.373 12 12"/><path d="M22 20l3 3 5-5"/></svg>
-          </div>
+      <div class="mt-6 flex flex-col items-center justify-between overflow-hidden rounded-[4px] border border-[var(--color-n400)] bg-white shadow-[0px_8px_30.5px_rgba(0,0,0,0.04)] sm:flex-row">
+        <!-- Figma illustration — clip to show only the left character/icon area -->
+        <div class="relative hidden h-[170px] w-[220px] shrink-0 overflow-hidden sm:block">
+          <img src="/advisory/nudge-illustration.png" alt=""
+               style="position:absolute;left:0;top:50%;transform:translateY(-50%);height:326px;width:auto;max-width:none;" />
+        </div>
+        <div class="flex flex-1 items-center justify-between gap-6 px-8 py-6">
           <div>
-            <p class="text-[16px] font-semibold text-[var(--color-n900)]">
+            <p class="text-[18px] font-semibold text-[var(--color-n900)]">
               Unsure on where to begin? <span class="text-[var(--color-brand)]">We've got you.</span>
             </p>
-            <p class="mt-1 text-[13px] leading-relaxed text-[var(--color-muted)]">
+            <p class="mt-2 max-w-xl text-[14px] leading-relaxed text-[var(--color-muted)]">
               Our dedicated specialists evaluate your initial concepts, followed by a personal manager who will collaborate with you to architect a comprehensive financial roadmap.
             </p>
           </div>
+          <a href="/about/support/" class="btn-primary shrink-0">Schedule a Call</a>
         </div>
-        <a href="/about/support/" class="btn-primary shrink-0">Schedule a Call</a>
       </div>
     </div>
   </section>
