@@ -80,82 +80,14 @@ const advisoryCards = [
 ];
 
 const allProducts = [
-  {
-    label: 'Equities',
-    href: '/products/equity/',
-    sub: 'Trade in NSE & BSE Equity with zero delay and in-depth research support.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="3,17 8,11 12,15 19,7"/><polyline points="15,7 19,7 19,11"/></svg>`,
-  },
-  {
-    label: 'Margin Trading Facility (MTF)',
-    href: '/products/mtf/',
-    sub: 'Trade with leverage and increase your buying power with flexible margin options.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><ellipse cx="12" cy="7" rx="7" ry="2.5"/><path d="M5 7v5c0 1.4 3.1 2.5 7 2.5S19 13.4 19 12V7"/><path d="M5 12v3c0 1.4 3.1 2.5 7 2.5"/></svg>`,
-  },
-  {
-    label: 'Derivatives',
-    href: '/products/derivative/',
-    sub: 'Trade Futures & Options to hedge your portfolio or maximise returns.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M7 17V7m0 0L4 10m3-3 3 3M17 7v10m0 0 3-3m-3 3-3-3"/></svg>`,
-  },
-  {
-    label: 'Mutual Funds',
-    href: '/products/mutual-funds/',
-    sub: 'Compare 3,000+ Funds across categories and invest in direct plans at zero commission.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 3a9 9 0 0 1 9 9H12V3z"/><circle cx="12" cy="12" r="9"/></svg>`,
-  },
-  {
-    label: 'Loan Against Mutual Funds (LAMF)',
-    href: '/products/mtf/',
-    sub: 'Get instant loans against your mutual fund holdings at competitive interest rates.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2 21 7v8l-9 5-9-5V7z"/><path d="M9 12l2 2 4-4"/></svg>`,
-  },
-  {
-    label: 'Initial Public Offering (IPO)',
-    href: '/products/ipo/',
-    sub: 'Apply for upcoming IPOs seamlessly. Explore SME & Mainboard news.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4.5 17.5c-1.5 1.2-1.5 4-1.5 4s2.8-.3 4-1.5a1.8 1.8 0 0 0-2.5-2.5z"/><path d="M12 15.5 10 13A19 19 0 0 1 11.5 10 11 11 0 0 1 20 3c0 2-.5 6.5-5.5 10a19 19 0 0 1-2.5 2.5z"/></svg>`,
-  },
-  {
-    label: 'Exchange Traded Funds (ETF)',
-    href: '/products/etf/',
-    sub: 'Diversify your portfolio with ETFs tracking indices, sectors, and commodities.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
-  },
-  {
-    label: 'National Pension Scheme (NPS)',
-    href: '/products/nps/',
-    sub: 'Tailored strategies for high net-worth investors by SEBI registered experts.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20 12A8 8 0 1 0 4 12h16Z"/><path d="M15 16a3 3 0 0 1-6 0v-4"/></svg>`,
-  },
-];
-
-const startSteps = [
-  {
-    title: 'Basic Information',
-    desc: 'Name, mobile number, PAN — takes under two minutes.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>`,
-  },
-  {
-    title: 'Complete eKYC via Aadhaar',
-    desc: 'OTP-based verification — no physical forms or branch visits.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>`,
-  },
-  {
-    title: 'Upload Documents',
-    desc: "Bank proof and a live photograph from your phone's camera.",
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>`,
-  },
-  {
-    title: 'Digital eSign',
-    desc: 'Aadhaar-based e-sign replaces physical signature on all forms.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>`,
-  },
-  {
-    title: 'Account Activation',
-    desc: 'Credentials delivered to your registered email. Start investing.',
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>`,
-  },
+  { label: 'Stocks',                        href: '/products/equity/',        sub: 'Trade in NSE & BSE Equity with zero-delay and in-depth research support.',              img: '/products/icon-equity.png' },
+  { label: 'Margin Trading Facility (MTF)', href: '/products/mtf/',           sub: 'Trade with leverage and increase your buying power with flexible margin options.',       img: '/products/icon-mtf.png' },
+  { label: 'Derivatives',                   href: '/products/derivative/',    sub: 'Trade Futures & Options to hedge your portfolio or maximise returns.',                   img: '/products/icon-derivatives.png' },
+  { label: 'Mutual Funds',                  href: '/products/mutual-funds/',  sub: 'Compare 3,000+ Funds across categories and invest in direct plans at zero commission.', img: '/products/icon-mf.png' },
+  { label: 'Loan Against Mutual Funds (LAMF)', href: '/products/mtf/',        sub: 'Get instant loans against your mutual fund holdings at competitive interest rates.',    img: '/products/icon-lamf.png' },
+  { label: 'Initial Public Offering (IPO)', href: '/products/ipo/',           sub: 'Apply for upcoming IPOs seamlessly. Explore GMP & Allotment News.',                     img: '/products/icon-ipo.png' },
+  { label: 'Exchange Traded Funds (ETF)',    href: '/products/etf/',           sub: 'Diversify your portfolio with ETFs tracking indices, sectors, and commodities.',        img: '/products/icon-etf.png' },
+  { label: 'National Pension Scheme (NPS)', href: '/products/nps/',           sub: 'Tailored strategies for high-net-worth investors by SEBI-registered experts.',          img: '/products/icon-nps.png' },
 ];
 
 const faqs = [
@@ -289,88 +221,6 @@ const faqs = [
     </div>
   </section>
 
-  <!-- ══ HOW SOON CAN I START? ══ -->
-  <section class="bg-[#fdfdfd]">
-    <div class="site-wrap py-36">
-
-      <!-- Top row: text left + rocket right -->
-      <div class="relative flex items-start justify-between gap-12">
-
-        <!-- Left: heading + subtitle + CTA -->
-        <div class="flex max-w-[600px] flex-col gap-12">
-          <div class="flex flex-col gap-4">
-            <h2 class="text-[40px] font-normal leading-[1.4] text-[var(--color-n900)]" style="font-family:var(--font-body)">
-              How Soon can I <span class="font-semibold text-[var(--color-brand)]">Start</span>?
-            </h2>
-            <p class="text-[18px] leading-relaxed tracking-[0.36px] text-[var(--color-n900)]" style="font-family:var(--font-body)">
-              Within <strong class="font-bold">minutes</strong>. You can create a Trading Account swiftly in a five-stage online process that can be completed on any of your devices.
-            </p>
-          </div>
-          <a href="/about/open-demat-account/"
-             class="flex h-[40px] w-[220px] items-center justify-center rounded-[4px] bg-[var(--color-brand)] text-[12px] font-medium text-white transition-colors hover:bg-[var(--color-brand-hover)]">
-            Open a Demat Account
-          </a>
-        </div>
-
-        <!-- Right: rocket illustration (725×340 original, ~half screen in Figma) -->
-        <div class="hidden flex-1 items-center justify-end lg:flex">
-          <img src="/how-soon-rocket.png" alt="Rocket launch illustration"
-               width="725" height="340"
-               class="w-full max-w-[600px] object-contain" />
-        </div>
-      </div>
-
-      <!-- Steps row — 5 steps connected by a horizontal line -->
-      <div class="relative mt-32">
-        <!-- Connecting line at vertical centre of icons (icons are h-[64px], so 32px from top) -->
-        <div class="absolute left-[24px] right-[24px] top-[32px] border-t border-dashed border-[#e6e6e6]"></div>
-
-        <div class="relative grid grid-cols-2 gap-y-12 sm:grid-cols-5">
-          {[
-            {
-              img: '/step-1.png',
-              title: 'Basic Information',
-              desc: 'Name, mobile number, PAN — takes under two minutes.',
-            },
-            {
-              img: '/step-2.png',
-              title: 'Complete eKYC via Aadhaar',
-              desc: 'OTP-based verification — no physical forms or branch visits.',
-            },
-            {
-              img: '/step-3.png',
-              title: 'Upload Documents',
-              desc: "Bank proof and a live photograph from your phone's camera.",
-            },
-            {
-              img: '/step-4.png',
-              title: 'Digital eSign',
-              desc: 'Aadhaar-based e-sign replaces physical signature on all forms.',
-            },
-            {
-              img: '/step-5.png',
-              title: 'Account Activation',
-              desc: 'Credentials delivered to your registered email. Start investing.',
-            },
-          ].map((step) => (
-            <div class="flex flex-col items-center gap-6 px-4 text-center">
-              <!-- Icon box -->
-              <div class="relative z-10 flex h-[64px] w-[48px] shrink-0 items-center justify-center rounded-[8px] border border-[#e6e6e6] bg-white">
-                <img src={step.img} alt="" class="h-full w-full object-contain" />
-              </div>
-              <!-- Text -->
-              <div class="flex flex-col gap-3">
-                <p class="text-[18px] font-medium leading-snug text-[#121212]">{step.title}</p>
-                <p class="text-[14px] leading-relaxed text-[#121212] opacity-70">{step.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- ══ HOW ARE WE DIFFERENT? ══ -->
   <section class="bg-[var(--color-dark-800)] relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0 opacity-[0.04]"
@@ -477,7 +327,7 @@ const faqs = [
       <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h2 class="text-[26px] font-bold leading-tight text-white sm:text-[32px] lg:text-[44px]" style="font-family:var(--font-display)">
-            Trade, Invest Or Lend.<br class="hidden sm:block"> <span class="text-[#FFD600]">All At One Place.</span>
+            Trade, Invest Or Lend. <span class="text-[#FFD600]">All At One Place.</span>
           </h2>
           <p class="mt-3 text-[15px] text-[rgba(255,255,255,0.55)]">
             From personalized insights to instant transactions, everything you need is now in one place.
@@ -499,7 +349,7 @@ const faqs = [
                 </svg>
               </div>
             </div>
-            <span class="block h-11 w-11 shrink-0 text-white/60 transition-colors duration-300 group-hover:text-white/90" set:html={p.icon}/>
+            <img src={p.img} alt="" class="h-[44px] w-[44px] shrink-0 object-contain opacity-70 transition-opacity duration-300 group-hover:opacity-90" />
             <div class="mt-auto flex flex-col gap-2">
               <h3 class="text-[15px] font-bold leading-snug text-[#629bff] transition-colors duration-300 group-hover:text-white" style="font-family:var(--font-display)">{p.label}</h3>
               <p class="text-[12px] leading-[1.6] text-white/55 transition-colors duration-300 group-hover:text-white/80">{p.sub}</p>
@@ -512,62 +362,60 @@ const faqs = [
   </section>
 
   <!-- ══ HOW SOON CAN I START? ══ -->
-  <section class="bg-[var(--color-n100)]">
-    <div class="site-wrap py-16 lg:py-20">
-      <!-- Top: text left + illustration right -->
-      <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
-        <div class="lg:max-w-[480px]">
-          <h2 class="text-[26px] font-bold text-[var(--color-n900)] sm:text-[32px] lg:text-[44px]" style="font-family:var(--font-display)">
-            How Soon Can I <span class="text-[var(--color-brand)]">Start?</span>
-          </h2>
-          <p class="mt-4 text-[15px] leading-relaxed text-[var(--color-muted)]">
-            Within <strong class="text-[var(--color-n900)]">minutes</strong>. You can create a Trading Account swiftly in a five-stage online process that can be completed on any of your devices.
-          </p>
-          <a href="/about/open-demat-account/" class="btn-primary mt-8 inline-flex">Open a Demat Account</a>
-        </div>
-        <!-- Rocket illustration (CSS-drawn) -->
-        <div class="flex flex-1 items-center justify-center lg:justify-end">
-          <div class="relative flex h-48 w-64 items-end justify-center lg:h-64 lg:w-80">
-            <!-- Clouds -->
-            <div class="absolute bottom-0 left-0 right-0 flex justify-center gap-3">
-              <div class="h-10 w-24 rounded-full bg-[var(--color-n400)]/60"></div>
-              <div class="h-8 w-16 rounded-full bg-[var(--color-n400)]/40"></div>
-              <div class="h-10 w-20 rounded-full bg-[var(--color-n400)]/50"></div>
-            </div>
-            <!-- Rocket body -->
-            <div class="relative mb-6 flex flex-col items-center">
-              <div class="h-20 w-10 rounded-t-full bg-[var(--color-brand)] flex items-start justify-center pt-3">
-                <div class="h-6 w-6 rounded-full bg-white/30"></div>
-              </div>
-              <div class="h-5 w-14 bg-[var(--color-brand)]/80 clip-trapezoid"></div>
-              <!-- Fins -->
-              <div class="absolute bottom-0 -left-3 h-5 w-4 rounded-b-sm bg-[var(--color-brand-hover)] skew-x-[-6deg]"></div>
-              <div class="absolute bottom-0 -right-3 h-5 w-4 rounded-b-sm bg-[var(--color-brand-hover)] skew-x-[6deg]"></div>
-              <!-- Flame -->
-              <div class="mt-0.5 h-6 w-4 rounded-b-full bg-gradient-to-b from-yellow-400 to-orange-500 opacity-90 animate-pulse"></div>
-            </div>
+  <section class="bg-[#fdfdfd]">
+    <div class="site-wrap py-36">
+
+      <!-- Top row: text left + rocket right -->
+      <div class="relative flex items-start justify-between gap-12">
+
+        <!-- Left: heading + subtitle + CTA -->
+        <div class="flex max-w-[600px] flex-col gap-12">
+          <div class="flex flex-col gap-4">
+            <h2 class="text-[40px] font-normal leading-[1.4] text-[var(--color-n900)]" style="font-family:var(--font-body)">
+              How Soon can I <span class="font-semibold text-[var(--color-brand)]">Start</span>?
+            </h2>
+            <p class="text-[18px] leading-relaxed tracking-[0.36px] text-[var(--color-n900)]" style="font-family:var(--font-body)">
+              Within <strong class="font-bold">minutes</strong>. You can create a Trading Account swiftly in a five-stage online process that can be completed on any of your devices.
+            </p>
           </div>
+          <a href="/about/open-demat-account/"
+             class="flex h-[40px] w-[220px] items-center justify-center rounded-[4px] bg-[var(--color-brand)] text-[12px] font-medium text-white transition-colors hover:bg-[var(--color-brand-hover)]">
+            Open a Demat Account
+          </a>
+        </div>
+
+        <!-- Right: rocket illustration (725×340) -->
+        <div class="hidden flex-1 items-center justify-end lg:flex">
+          <img src="/how-soon-rocket.png" alt="Rocket launch illustration"
+               width="725" height="340"
+               class="w-full max-w-[600px] object-contain" />
         </div>
       </div>
 
-      <!-- Bottom: 5 horizontal steps -->
-      <div class="mt-14 relative">
-        <!-- connecting line -->
-        <div class="absolute left-[10%] right-[10%] top-8 hidden h-px bg-[var(--color-n400)] lg:block" aria-hidden="true"></div>
-        <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 lg:grid-cols-5">
-          {startSteps.map((s, i) => (
-            <div class="relative flex flex-col items-center gap-4 text-center">
-              <div class="relative z-10 grid h-16 w-16 place-items-center rounded-[8px] border-2 border-[var(--color-n400)] bg-white shadow-sm">
-                <span class="h-6 w-6 text-[var(--color-brand)]" set:html={s.icon}/>
+      <!-- Steps row — 5 steps connected by a horizontal dashed line -->
+      <div class="relative mt-32">
+        <div class="absolute left-[24px] right-[24px] top-[32px] border-t border-dashed border-[#e6e6e6]"></div>
+        <div class="relative grid grid-cols-2 gap-y-12 sm:grid-cols-5">
+          {[
+            { img: '/step-1.png', title: 'Basic Information',        desc: 'Name, mobile number, PAN — takes under two minutes.' },
+            { img: '/step-2.png', title: 'Complete eKYC via Aadhaar', desc: 'OTP-based verification — no physical forms or branch visits.' },
+            { img: '/step-3.png', title: 'Upload Documents',          desc: "Bank proof and a live photograph from your phone's camera." },
+            { img: '/step-4.png', title: 'Digital eSign',             desc: 'Aadhaar-based e-sign replaces physical signature on all forms.' },
+            { img: '/step-5.png', title: 'Account Activation',        desc: 'Credentials delivered to your registered email. Start investing.' },
+          ].map((step) => (
+            <div class="flex flex-col items-center gap-6 px-4 text-center">
+              <div class="relative z-10 flex h-[64px] w-[48px] shrink-0 items-center justify-center rounded-[8px] border border-[#e6e6e6] bg-white">
+                <img src={step.img} alt="" class="h-full w-full object-contain" />
               </div>
-              <div>
-                <div class="text-[14px] font-bold text-[var(--color-n900)]">{s.title}</div>
-                <div class="mt-1 text-[12px] leading-relaxed text-[var(--color-muted)]">{s.desc}</div>
+              <div class="flex flex-col gap-3">
+                <p class="text-[18px] font-medium leading-snug text-[#121212]">{step.title}</p>
+                <p class="text-[14px] leading-relaxed text-[#121212] opacity-70">{step.desc}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+
     </div>
   </section>
 
