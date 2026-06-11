@@ -240,7 +240,7 @@ const faqs = [
           </div>
 
           <!-- Right: scrollable glassmorphism card panel -->
-          <div class="flex max-h-[440px] flex-col gap-4 overflow-y-auto pr-2"
+          <div id="differ-scroll" class="flex max-h-[440px] flex-col gap-4 overflow-y-auto pr-2"
                style="scrollbar-width:thin;scrollbar-color:rgba(243,184,63,0.4) transparent;">
             {differItems.map((item) => (
               <div class="rounded-[12px] border-b-2 border-[#f3b83f] p-6"
@@ -538,6 +538,32 @@ const faqs = [
       }
     });
     heroVideo.addEventListener('ended', () => { heroVideo.currentTime = 0; heroVideo.play(); });
+  }
+
+  /* "How Are We Different?" — auto-scroll the card panel */
+  const differScroll = document.getElementById('differ-scroll');
+  if (differScroll) {
+    let paused = false;
+    let raf: number;
+    const SPEED = 0.6; // px per frame
+
+    const tick = () => {
+      if (!paused) {
+        differScroll.scrollTop += SPEED;
+        // loop back to top when end reached
+        if (differScroll.scrollTop + differScroll.clientHeight >= differScroll.scrollHeight - 2) {
+          setTimeout(() => { differScroll.scrollTop = 0; }, 800);
+        }
+      }
+      raf = requestAnimationFrame(tick);
+    };
+
+    differScroll.addEventListener('mouseenter', () => { paused = true; });
+    differScroll.addEventListener('mouseleave', () => { paused = false; });
+    differScroll.addEventListener('touchstart',  () => { paused = true;  }, { passive: true });
+    differScroll.addEventListener('touchend',    () => { paused = false; }, { passive: true });
+
+    raf = requestAnimationFrame(tick);
   }
 
   /* Product cards — inward scroll-reveal */
