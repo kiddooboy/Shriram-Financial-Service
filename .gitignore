@@ -1,4 +1,5 @@
 *.mp4
+!shriram-financial/public/BG.mp4
 *.fig
 *.pem
 *.png
