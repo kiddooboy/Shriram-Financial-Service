@@ -370,10 +370,10 @@ h1, h2, h3, h4, h5, .font-display {
   100%   { transform: translateY(-168px); } /* duplicate Stocks — loop restarts invisibly */
 }
 
-/* ── Product card: citrus circle bursts from card corner outward on hover ──── */
-/* Circle sits 20px inset from top-right. Transform-origin is anchored at the  */
-/* card's actual corner (20px past the element's right, 20px above its top),   */
-/* so scale(0→1) makes it emerge from the corner point into the card.          */
+/* ── Product card: citrus circle shrinks from full-card size into the corner ─ */
+/* Matches recording: on hover the yellow appears huge (covering the card,     */
+/* clipped by overflow-hidden) and SHRINKS down into the small 80px corner     */
+/* circle. On exit it expands back out while fading away.                      */
 .product-card-circle {
   position: absolute;
   right: 20px;
@@ -386,12 +386,16 @@ h1, h2, h3, h4, h5, .font-display {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(0);
-  transform-origin: calc(100% + 20px) -20px;
-  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: scale(8);
+  opacity: 0;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.22s ease 0.18s;
 }
 .group:hover .product-card-circle {
   transform: scale(1);
+  opacity: 1;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.10s ease;
 }
 
 /* ── Product card inward scroll-reveal animation ── */
