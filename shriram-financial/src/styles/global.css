@@ -41,8 +41,8 @@
   --color-surface: #F7F7F7;
   --color-paper:   #FFFFFF;
 
-  /* ── Typography (Figma: Gilmer→Plus Jakarta Sans, Outfit) ── */
-  --font-display: "Plus Jakarta Sans", "DM Sans", system-ui, sans-serif;
+  /* ── Typography — Outfit across the entire site ── */
+  --font-display: "Outfit", "Inter", system-ui, sans-serif;
   --font-body:    "Outfit", "Inter", system-ui, sans-serif;
 
   /* ── Radius (4px buttons, 8px inputs, 24px for all card/box containers) ── */
