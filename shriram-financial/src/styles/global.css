@@ -345,14 +345,14 @@ h1, h2, h3, h4, h5, .font-display {
   justify-content: center;
   opacity: 0;
   transform: scale(8);
-  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1),
-              opacity 0.2s ease 0.1s;
+  transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1),
+              opacity 140ms ease 60ms;
 }
 .group:hover .product-card-circle {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1),
-              opacity 0.08s ease;
+  transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1),
+              opacity 60ms ease;
 }
 
 /* ── Differ panel: full-height rail, centered card, glassy edge fades ────── */
