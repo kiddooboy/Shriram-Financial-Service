@@ -10,14 +10,14 @@ const about     = navigation.find(n => n.label === 'About')!;
   <div class="site-wrap flex h-full items-center justify-between">
 
     <!-- Logo -->
-    <div class="flex shrink-0 items-center gap-10 lg:gap-16">
+    <div class="flex shrink-0 items-center gap-8 2xl:gap-16">
       <a href="/" class="flex shrink-0 items-center" aria-label="Shriram Financial Services">
         <img src="/logo_v1.png" alt="Shriram Financial Services" width="110" height="52"
              class="h-[52px] w-auto object-contain" />
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden items-center gap-6 lg:flex" aria-label="Primary">
+      <nav class="hidden items-center gap-2 lg:flex 2xl:gap-6" aria-label="Primary">
 
         <!-- Products mega -->
         <div class="group relative">
@@ -136,10 +136,10 @@ const about     = navigation.find(n => n.label === 'About')!;
     </div>
 
     <!-- Right: Search + Auth -->
-    <div class="flex items-center gap-16">
+    <div class="flex min-w-0 items-center gap-6 2xl:gap-16">
 
       <!-- Search bar with rolling ticker -->
-      <div class="hidden h-[40px] w-[246px] items-center justify-between rounded-[4px] border border-[#f2f2f2] bg-white px-3 lg:flex">
+      <div class="hidden h-[40px] w-[180px] shrink items-center justify-between rounded-[4px] border border-[#f2f2f2] bg-white px-3 xl:flex 2xl:w-[246px]">
         <div class="relative h-[16px] flex-1 overflow-hidden">
           <span class="absolute left-0 top-0 text-[12px] font-medium leading-[16px] text-[#333]">Search for</span>
           <div class="search-ticker">
@@ -160,7 +160,7 @@ const about     = navigation.find(n => n.label === 'About')!;
       <div class="flex items-center gap-4 lg:gap-6">
         <!-- Login -->
         <div class="group relative hidden lg:block">
-          <button class="flex items-center gap-1.5 text-[16px] font-semibold text-[#2f7ef4] transition-opacity hover:opacity-80">
+          <button class="flex shrink-0 items-center gap-1.5 whitespace-nowrap text-[16px] font-semibold text-[#2f7ef4] transition-opacity hover:opacity-80">
             Login
             <svg class="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg>
           </button>
@@ -173,7 +173,7 @@ const about     = navigation.find(n => n.label === 'About')!;
         </div>
 
         <!-- Open A Trading Account CTA -->
-        <a href="/about/open-demat-account/" class="hidden h-[52px] items-center justify-center rounded-[14px] bg-[#2b2b2b] px-7 text-[15px] font-semibold text-white transition-colors hover:bg-[#111] lg:flex">
+        <a href="/about/open-demat-account/" class="hidden h-[48px] shrink-0 items-center justify-center whitespace-nowrap rounded-[14px] bg-[#2b2b2b] px-5 text-[14px] font-semibold text-white transition-colors hover:bg-[#111] lg:flex 2xl:h-[52px] 2xl:px-7 2xl:text-[15px]">
           Open A Trading Account
         </a>
 
