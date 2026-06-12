@@ -45,11 +45,11 @@
   --font-display: "Plus Jakarta Sans", "DM Sans", system-ui, sans-serif;
   --font-body:    "Outfit", "Inter", system-ui, sans-serif;
 
-  /* ── Radius (Figma uses 4px for buttons, 8px for inputs, 4px for cards) ── */
+  /* ── Radius (4px buttons, 8px inputs, 24px for all card/box containers) ── */
   --radius-btn:  4px;
   --radius-input:8px;
-  --radius-card: 4px;
-  --radius-card-lg: 8px;
+  --radius-card: 24px;
+  --radius-card-lg: 24px;
   --radius-pill: 9999px;
 
   /* ── Shadows ── */
